@@ -11,18 +11,25 @@ namespace Lesson_1
             //printToConsole();
             //Console.WriteLine("First Argument is: " + args[0]);
             //Console.WriteLine("Second Argument is: " + args[0]);
+            string[] temp = new string[5] { "this", "is", "a", "string", "!" };
 
-            //for (int i = 0; i < args.Length; i++)
+            foreach (string s in temp)
+            {
+                Console.WriteLine(s);
+            }
+
+
+            for (int i = 0; i < temp.Length; i++)
+            {
+                Console.WriteLine(temp[i]);
+            }
+            //    bool flag = false;
+            //int i = 0;
+            //while (flag == true)
             //{
             //    Console.WriteLine("Argument " + i + " is " + args[i]);
+            //    ++i;
             //}
-            bool flag = false;
-            int i = 0;
-            while (flag == true)
-            {
-                Console.WriteLine("Argument " + i + " is " + args[i]);
-                ++i;
-            }
             //int i = 0;
             //bool flag = false;
             //do
@@ -31,6 +38,8 @@ namespace Lesson_1
             //    i++;
             //} while (flag == true);
         }
+        
+            
 
         static void printToConsole()
         {
